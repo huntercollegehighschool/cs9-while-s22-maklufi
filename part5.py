@@ -16,5 +16,16 @@ Enter a number or enter 0 to stop: 10
 Enter a number or enter 0 to stop: 7
 Enter a number or enter 0 to stop: 0
 Number of evens: 3
-
 '''
+
+num = int(input("Enter a number or enter 0 to stop: "))
+total = 0
+
+while num != 0:
+  if num % 2 == 0:
+    total = total + 1
+  else:
+    total = total
+  num = int(input("Enter a number or enter 0 to stop: "))
+
+print("Number of evens:", total)
